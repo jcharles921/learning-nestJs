@@ -11,8 +11,13 @@ NestJs provide an architecture out of the box to add a abstraction layer to node
 it has somme Parts:
 
 -  @Modules:   have *Controllers* and *Providers* , it used to encapsulate routes for features like the products or users 
-- @Controllers: specify a specify action and the end of a route
- 
+- @Controllers: NestJS controllers handle incoming requests, define API endpoints, and implement business logic to generate appropriate HTTP responses.
+
+- @Provider: is a class that we can inject in any controller or method that depend on it
+
+- Entities: Entities are for tables or for collections.
+- DTO: DTO stands for data transfer object. We can specify the object. (data you can expect from the body in the request).
+- Service: NestJS service will perform database operation and return the appropriate response.
 
 
 
@@ -21,5 +26,5 @@ it has somme Parts:
 * GET /ninjas -->[ all ninjas]
 * GET /ninjas/:id --> [get one ninjas]
 * POST /ninjas -->[one ninjas is created]
-* PUT /ninjas/:id -->[modify one ninja]
-* Delete /ninjas/:id -->[delete one ninja] 
+* PUT /ninjas/:id -->[modify one ninjas]
+* Delete /ninjas/:id -->[delete one ninjas] 
