@@ -20,6 +20,9 @@ dotenv.config();
       database: process.env.DB_NAME,
       synchronize: true,
       logging: true,
+      ssl: {
+        rejectUnauthorized: false, // Adjust based on your security requirements
+      },
     }),
     NinjasModule,
     UserModule,
