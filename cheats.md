@@ -2,7 +2,7 @@
 
 `nest generate controller ninjas` : Generate a controller inside the ninjas module
 
-`nest g service ninjas` : Generate a provider 
+`nest g service ninjas` : Generate a module whith controller and providers
 
 ## NestJs 
 

@@ -1,7 +1,7 @@
-import { IsNotEmpty } from "class-validator";
+import { IsNotEmpty } from 'class-validator';
 
 export class CreateNinjasDto {
-    @IsNotEmpty()
+  @IsNotEmpty()
   name: string;
   age: number;
   village: string;

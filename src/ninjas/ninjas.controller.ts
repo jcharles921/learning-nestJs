@@ -5,14 +5,11 @@ import { NinjasService } from './ninjas.service';
 
 @Controller('ninjas')
 export class NinjasController {
-    constructor(private readonly ninjasService: NinjasService){
-        
-    }
+  constructor(private readonly ninjasService: NinjasService) {}
   @Get()
-  getNinjas(@Query('village') village :'Kumo' | 'Suna' | 'Konowa') {
+  getNinjas(@Query('village') village: 'Kumo' | 'Suna' | 'Konowa') {
     // const service = new NinjasService()
-    return this.ninjasService.getVillage(village)
-  
+    return this.ninjasService.getVillage(village);
   }
 
   @Get(`:id`)
